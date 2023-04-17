@@ -10,3 +10,6 @@ Blogpost Link:
 
 ## How to run
 
+1. Clone the repository  
+2. `cd` into the directory  
+3. To run script locally, run `python3 file-validation/src/validate_file.py local file-validation/util/correct.csv file-validation/util/schema.txt`  
