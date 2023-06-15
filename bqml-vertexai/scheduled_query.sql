@@ -1,11 +1,11 @@
 CREATE OR REPLACE MODEL 
-  `vlog_us.vlog_model`
+  `sandbox_us.linear_reg_model`
 OPTIONS
   ( MODEL_TYPE='LINEAR_REG',
     MAX_ITERATIONS=5,
     INPUT_LABEL_COLS=['total_amount'],
     MODEL_REGISTRY = 'VERTEX_AI', 
-    VERTEX_AI_MODEL_ID = 'vlog_model' ) AS
+    VERTEX_AI_MODEL_ID = 'linear_reg_model' ) AS
 SELECT
   trip_distance, 
   passenger_count, 
@@ -13,17 +13,16 @@ SELECT
 FROM
   `bigquery-public-data.new_york_taxi_trips.tlc_green_trips_2020`;
 
-CREATE OR REPLACE TABLE `vlog_us.predictions`
+CREATE OR REPLACE TABLE `sandbox_us.predictions`
 AS
 SELECT
   *
 FROM
-  ML.PREDICT(MODEL `vlog_us.vlog_model`,
+  ML.PREDICT(MODEL `sandbox_us.linear_reg_model`,
     (
     SELECT
       trip_distance, 
-      passenger_count, 
-      total_amount
+      passenger_count
     FROM
       `bigquery-public-data.new_york_taxi_trips.tlc_green_trips_2021`));
       

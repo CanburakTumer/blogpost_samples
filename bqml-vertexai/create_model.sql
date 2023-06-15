@@ -1,11 +1,11 @@
 CREATE OR REPLACE MODEL 
-  `vlog_us.vlog_model`
+  `sandbox_us.linear_reg_model`
 OPTIONS
   ( MODEL_TYPE='LINEAR_REG',
     MAX_ITERATIONS=5,
     INPUT_LABEL_COLS=['total_amount'],
     MODEL_REGISTRY = 'VERTEX_AI', 
-    VERTEX_AI_MODEL_ID = 'vlog_model' ) AS
+    VERTEX_AI_MODEL_ID = 'linear_reg_model' ) AS
 SELECT
   trip_distance, 
   passenger_count, 

@@ -1,3 +1,2 @@
 DROP MODEL 
-  `vlog_us.vlog_model`;
-  
+  `sandbox_us.linear_reg_model`;
