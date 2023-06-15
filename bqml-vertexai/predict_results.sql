@@ -7,7 +7,6 @@ FROM
     (
     SELECT
       trip_distance, 
-      passenger_count, 
-      total_amount
+      passenger_count
     FROM
       `bigquery-public-data.new_york_taxi_trips.tlc_green_trips_2021`));
