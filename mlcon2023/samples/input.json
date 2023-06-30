@@ -1,0 +1,11 @@
+{
+  "instances": [
+    {   
+      "trip_distance": 21.90,
+      "pickup_hour": "14",
+      "pickup_minute": "12",
+      "pickup_day": "6",
+      "pickup_week": "24",
+    } 
+  ]
+}

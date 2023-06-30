@@ -1,0 +1,23 @@
+{
+    "predictions": [
+        [
+            24.125407303267909
+        ]
+    ],
+    "deployedModelId": "37<REDACTED>80",
+    "model": "projects/<PROJECT_ID>/locations/us-central1/models/predict_trip_duration",
+    "modelDisplayName": "predict_trip_duration",
+    "modelVersionId": "5"
+}
+  
+{
+    "predictions": [
+        [
+            22.07374438383922
+        ]
+    ],
+    "deployedModelId": "59<REDACTED>72",
+    "model": "projects/<PROJECT_ID>/locations/us-central1/models/predict_trip_duration",
+    "modelDisplayName": "predict_trip_duration",
+    "modelVersionId": "6"
+}

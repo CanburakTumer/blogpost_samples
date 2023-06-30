@@ -1,0 +1,3 @@
+{ "error": "Failed to process element: 0 of \'instances\' list. JSON object: {\n    \"pickup_day\": \"6\",\n    \"pickup_hour\": \"14\",\n    \"pickup_minute\": \"12\",\n    \"pickup_week\": \"24\",\n    \"trip_distance\": 21.9\n} must only have keys: dropoff_location_id,pickup_day,pickup_hour,pickup_location_id,pickup_minute,pickup_week,trip_distance" }
+
+{ "error": "Failed to process element: 0 key: dropoff_location_id of \'instances\' list. Error: Invalid argument: JSON object: does not have named input: dropoff_location_id" }
