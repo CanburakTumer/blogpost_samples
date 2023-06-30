@@ -43,10 +43,12 @@ __Length Distribution__
 | 8 | 6 |	
 | 9 | 25575883 |
 
-__Solution__
+__Solution__  
+```
 category is not null
 length(category) != 8
 cast(cast(case when ends_with(category, '.0') then substr(category, 1, instr(category, '.')-1) else category end as 
+```
 
 ### Clean data info
 
